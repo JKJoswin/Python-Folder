@@ -1,0 +1,12 @@
+tuple1=(2,56,4,5,123,653,180)
+print(tuple1,type(tuple1))
+t1=(54,67,52,79,("High","Low","Medium"),765,1234,5099)
+print(t1,type(t1))
+t2=tuple(["Joswin","John","James"])
+print(t2,type(t2))
+print(t2[0])
+print(tuple1[-2])
+print(t1[4])
+print(t1[4][1])
+for i in t1:
+    print(i)
