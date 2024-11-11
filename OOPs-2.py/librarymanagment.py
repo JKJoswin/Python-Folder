@@ -8,7 +8,7 @@ class library:
     
     def displaybooks(self,booklist):
         print("The books we have are- ")
-        for i in self.booklist
+        for i in self.booklist:
             print(i)
 
 
