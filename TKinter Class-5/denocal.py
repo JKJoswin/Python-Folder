@@ -8,6 +8,19 @@ root.geometry("400x400")
 root.configure(bg="azure")
 
 def topwin():
+    def calculate():
+        global amount
+        amount=int(entry1.get())
+        note2000=amount//2000
+        amount=amount%2000
+        note500=amount//500
+        amount=amount%500
+        note100=amount//100
+        amount=amount%100
+        e1.insert(END,str(note2000))
+        e2.insert(END,str(note500))
+        e3.insert(END,str(note100))
+
     print("ok")
     top=Toplevel()
     top.title("Toplevel window")
@@ -18,7 +31,7 @@ def topwin():
     label2.place(x=20,y=50)
     entry1.place(x=100,y=50)
     label3=Label(top,text="Here are the number of notes of denomination")
-    button3=Button(top,text="Calculate")
+    button3=Button(top,text="Calculate",command=calculate)
     button3.place(x=20,y=70)
     label3.place(x=20,y=90)
     l1=Label(top,text="2000")
