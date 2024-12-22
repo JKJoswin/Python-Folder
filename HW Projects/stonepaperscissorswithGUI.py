@@ -13,7 +13,7 @@ def tieMsg():
         reset()
 
 def comMsg():
-    mbox=messagebox.showinfo("Computer wins!")
+    mbox=messagebox.showinfo("Com wins!")
     if mbox=="ok":
         reset()
 
